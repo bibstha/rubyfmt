@@ -696,7 +696,7 @@ pub fn args_has_single_def_expression(args: &ArgsAddStarOrExpressionListOrArgsFo
 }
 
 lazy_static! {
-    static ref RSPEC_METHODS: HashSet<&'static str> = vec!["it", "describe"].into_iter().collect();
+    static ref RSPEC_METHODS: HashSet<&'static str> = vec!["it", "describe", "test"].into_iter().collect();
     static ref GEMFILE_METHODS: HashSet<&'static str> = vec![
         // Gemfile
         "gem",
